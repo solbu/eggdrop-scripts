@@ -43,6 +43,10 @@ bind join - * join:sv
 proc join:sv {nick host hand chan} { global sv
    utimer [expr [lindex [split $sv(delay) :] 0] + [rand [lindex [split $sv(delay) :] 1]]] [list sv:voice $nick $host $hand $chan]
 }
+bind nick - * nick:sv
+proc nick:sv {nick uhost hand chan newnick} { global sv
+   utimer [expr [lindex [split $sv(delay) :] 0] + [rand [lindex [split $sv(delay) :] 1]]] [list sv:voice $newnick $host $hand $chan]
+}
 proc sv:voice {nick host hand chan} {
    global avchan botnick
  if {$nick == $botnick} {return 0}
