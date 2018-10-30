@@ -1,0 +1,9 @@
+v1.1 2018-10-31  Johnny A. Solbu <johnny@solbu.net>
+
+	* Check if the user already have voice
+	* Track nickname changes
+	  If users changed nick before being voiced, the bot didn't voice them
+
+v1.0 2018-10-29  Johnny A. Solbu <johnny@solbu.net>
+
+	* First release

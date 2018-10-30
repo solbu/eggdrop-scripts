@@ -1,0 +1,18 @@
+After the recent join spam tactic on FreeNode and EFnet in the fall of 2018,
+I needed something that voiced all users joining a moderated channel,
+but it needed to randomly delay the voicing to between 60 and 99 seconds after they join.
+And this is the result after looking on the internet for ideas.
+
+The Spambots this script is made to protect against deliver their spam withing 60 seconds after join.
+Since I deployed this script on the moderated channels I maintain, the spam is gone.
+The spambots stil join, but they can't deliver their cargo since the channels are moderated
+and they don't have voice within the timeframe they deliver their cargo.
+
+The script has been tested on eggdrop v1.8.3. So it should work fine on this version of eggdrop and
+higher. If you find any bug on this script, you can open a bug repport on Github https://github.com/solbu/eggdrop-scripts
+
+Features:
+---------
+This script will voice any user who joins a channel specified after a preset minimum and maximum time.
+The script also tracks nick changes, so users will get voice even if they change nick before the bot voice them.
+Default is to randomly delay voice to between 60 and 99 seconds.
