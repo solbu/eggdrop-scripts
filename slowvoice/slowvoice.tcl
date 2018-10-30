@@ -50,6 +50,7 @@ proc nick:sv {nick host hand chan newnick} { global sv
 proc sv:voice {nick host hand chan} {
    global avchan botnick
  if {$nick == $botnick} {return 0}
+ if { [isvoice $nick $chan] == 1 } { return 0 }
  if {$avchan == "" && [botisop $chan]} {
   pushmode $chan +v $nick
   return 0
