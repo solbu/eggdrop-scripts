@@ -1,4 +1,4 @@
-# slowvoice.tcl v1.0 by Solbu.
+# slowvoice.tcl v1.1 by Solbu.
 # Repository: https://github.com/solbu/eggdrop-scripts
 #
 # This program is free software; you can redistribute it and/or modify it
@@ -67,4 +67,4 @@ proc sv:voice {nick host hand chan} {
 foreach c "[channels]" { channel set "$c" -autovoice }
 catch { unset $c }
 
-putlog "slowvoice.tcl v1.0 (GPLv3+) by Solbu - Loaded"
+putlog "slowvoice.tcl v1.1 (GPLv3+) by Solbu - Loaded"
