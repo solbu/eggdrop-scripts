@@ -268,7 +268,7 @@ bind msg o|o help-lol msg_lol_help
   ###############################################################
 
 ################# MISC #################
-set lol(version_number) "6.1"
+set lol(version_number) "6.2"
 set lol(version) "\002\[LoL's TooLz $lol(version_number)]\002"
 
 bind dcc - help dcc_lol_help
