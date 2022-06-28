@@ -2590,10 +2590,10 @@ proc pub_lol_cigarette {nick host hand chan arg} {
 		return 0
 	}
 	if {$arg != ""} {
-		puthelp "PRIVMSG $chan :$nick offers this \002(\037)¯¯¯¯)¯¯¯¯¯¯¯¯¯¯¯\037)~~~\002 at $arg !!!"
+		puthelp "PRIVMSG $chan :$nick offers this \002(\037)Â¯Â¯Â¯Â¯)Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯\037)~~~\002 at $arg !!!"
 		return 0
 	}
-	puthelp "PRIVMSG $chan :I offer this \002(\037)¯¯¯¯)¯¯¯¯¯¯¯¯¯¯¯\037)~~~\002 at $nick !!!"
+	puthelp "PRIVMSG $chan :I offer this \002(\037)Â¯Â¯Â¯Â¯)Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯\037)~~~\002 at $nick !!!"
 	return 0
 }
 
@@ -2697,26 +2697,26 @@ proc pub_lol_penalty {nick host hand chan arg} {
 		{!!! GGGOOOOOOOOOAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLL !!!!!!!!! dans la lucarne gauche :))))}
 		{EVIVAAAAAAAAAAAAAAAA dans la lucarne droite :))))}
 		{!!! GGGOOOOOOOOOAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLL !!!!!!!!! en plein centre :))))}
-		{!!! GGGOOOOOOOOOAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLL !!!!!!!!! en force a gauche, le gardien a frolé le ballon :))))}
-		{IL L'A FAIT !!!!!!!!!! YEAHHHHHHH en force a droite, le gardien a frolé le ballon :))))}
+		{!!! GGGOOOOOOOOOAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLL !!!!!!!!! en force a gauche, le gardien a frolÃ© le ballon :))))}
+		{IL L'A FAIT !!!!!!!!!! YEAHHHHHHH en force a droite, le gardien a frolÃ© le ballon :))))}
 		{EVIVAAAAAAAAAAAAAAAA !!!!!!!!! en finnesse a gauche, le gardien pris a contre-pied :))))}
-		{Sans problèmes en finnesse a droite, le gardien pris a contre-pied :))))}
+		{Sans problÃ¨mes en finnesse a droite, le gardien pris a contre-pied :))))}
 		{!!! GOAL GOAL GOOOOOOOOOOOOOOAAAAAAAAAAL \/\/ Tout en puissance sous la transversale.}
 		{AHHHHHHRGGGGG :(( Par dessus la transversale !!!!}
 		{OOOOOOOHHUUUUUU :(((( Plein poteau :(}
 		{NOOOOOOOOON :((((( pleine transversale :(((((((}
-		{PUUTTTTTAAAIIINNNN !!! Il a tiré a coté :-/}
-		{Salopard de gardien !!! :((( Il a plongé du bon coté :((}
-		{En plein centre mais le gardien n'avait hélas pas anticipé :(}
+		{PUUTTTTTAAAIIINNNN !!! Il a tirÃ© a cotÃ© :-/}
+		{Salopard de gardien !!! :((( Il a plongÃ© du bon cotÃ© :((}
+		{En plein centre mais le gardien n'avait hÃ©las pas anticipÃ© :(}
 		{ARRGGGHHHH Tir central, mais le gardien devie la balle du pied :/}
 	}
 	if {$arg != ""} {
-		puthelp "PRIVMSG $chan :$joueur doit a tout prix marquer le penalty pour sauver son équipe..."
+		puthelp "PRIVMSG $chan :$joueur doit a tout prix marquer le penalty pour sauver son Ã©quipe..."
 		puthelp "PRIVMSG $chan :[string toupper $joueur] $text"
 		puthelp "PRIVMSG $chan :[lindex $results [rand [llength $results]]]"
 		return 0
 	}
-	puthelp "PRIVMSG $chan :$nick doit a tout prix marquer le penalty pour sauver son équipe..."
+	puthelp "PRIVMSG $chan :$nick doit a tout prix marquer le penalty pour sauver son Ã©quipe..."
 	puthelp "PRIVMSG $chan :[string toupper $nick] S'ELANCE SUR LA BALLE ET IL SHOOOT !!!!!!!"
 	puthelp "PRIVMSG $chan :[lindex $results [rand [llength $results]]]"
 	return 0
