@@ -1,0 +1,7 @@
+Sometime in the 2000s I added this scrip to my botnet, as it had some 
+commands I liked. However I did not want the bot to respond to 
+public !commands, so I removed or disabled them.
+
+This copy will Not respond in any way to commands typed in any channel.
+This means any interactions need to happen in a msg/query window
+or in the partyline.
